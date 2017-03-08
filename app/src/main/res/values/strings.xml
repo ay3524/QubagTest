@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">QubagTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_items">ItemsActivity</string>
+    <string name="title_activity_final_order">FinalOrderActivity</string>
+    <string name="title_activity_order_final">OrderFinalActivity</string>
+    <string name="title_activity_my_orders">MyOrdersActivity</string>
+    <string name="my_orders">My Orders</string>
+    <string name="log_out">Log Out</string>
+    <string name="not_verify">You are not verified yet!</string>
+    <string name="time_taken">It generally takes about less than 30 minute</string>
+    <string name="problem_internet">There might be some problem with internet connection</string>
+    <string name="try_checking">Try retrying after checking your connection!!!</string>
+</resources>
