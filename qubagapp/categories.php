@@ -2,8 +2,9 @@
 require_once 'include/DB_Functions.php';
 $db = new DB_Functions();
 	
+	require_once 'include/Config.php';
     //open connection to mysql db
-    $connection = mysqli_connect("localhost","root","","webappdb") or die("Error " . mysqli_error($connection));
+    $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE) or die("Error " . mysqli_error($connection));
 
     //fetch table rows from mysql db
     $sql = "select * from categories";
