@@ -1,10 +1,11 @@
 <?php
 	
+	require_once 'include/Config.php';
 	// json response array
 	$response = array("error" => FALSE);
 	
     //open connection to mysql db
-    $connection = mysqli_connect("localhost","root","","webappdb") or die("Error " . mysqli_error($connection));
+    $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE) or die("Error " . mysqli_error($connection));
 	
 	if (isset($_POST['category'])) {
 		// receiving the post params
@@ -28,8 +29,5 @@
     $response["error"] = TRUE;
     $response["error_msg"] = "Required parameters category is missing";
     echo json_encode($response);
-}
-
-    
-	
+}	
 ?>
